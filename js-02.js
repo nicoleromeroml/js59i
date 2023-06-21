@@ -1,8 +1,8 @@
 let dato = 'pablito clavo un clavito';
 let contrasena = '                      12345                     '
-//console.log(dato.length); //mostrarme la longitud de un elemento, ES UNA PROIPIEDAD
-//console.log(dato.toUpperCase()) // pasar toda la cadena a mayuscula, ES UN METODOS
-//console.log(dato.toLowerCase()) // pasar toda la cadena a minuscula, ES UN METODOS
+console.log(dato.length); //mostrarme la longitud de un elemento, ES UNA PROIPIEDAD
+console.log(dato.toUpperCase()) // pasar toda la cadena a mayuscula, ES UN METODOS
+console.log(dato.toLowerCase()) // pasar toda la cadena a minuscula, ES UN METODOS
 //console.log((dato.charAt(0))) // Devuelve un elemento de una determinada posicion, que debo indicarle a traves de; parametro
 //console.log(dato.substring(7))
 // Devuelve una parte de la cadena segun se le indique en el parametro, debemos indicar desde donde y hasta donde queremos cortar
@@ -36,9 +36,9 @@ let contrasena = '                      12345                     '
 
 //todo ENCONTRAR MAXIMOS Y MINIMOS
 
-//let maximo = Math.min(1,14,45,78,36);
-//console.log(`El numero mayor es ${maximo}`)
-//console.log(`El numero menor es ${maximo}`)
+let maximo = Math.min(1,14,45,78,36);
+console.log(`El numero mayor es ${maximo}`)
+console.log(`El numero menor es ${maximo}`)
 
 //TODO portencias y raices
 //console.log(Math.pow(3,2)) // cuadrado

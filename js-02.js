@@ -8,7 +8,7 @@ console.log(dato.toLowerCase()) // pasar toda la cadena a minuscula, ES UN METOD
 // Devuelve una parte de la cadena segun se le indique en el parametro, debemos indicar desde donde y hasta donde queremos cortar
 //console.log(contrasena.trim()) // Elimina los espacios en blanco
 
-//console.log(dato.includes('manzana')) // Verificamos si el texto que buscamos coincide o se encuentra dentro de la variable
+console.log(dato.includes('ana')) // Verificamos si el texto que buscamos coincide o se encuentra dentro de la variable
 
 //! Ejercicio1 en clases: Recibir el apellido del usuario, y mostrar por consola la última letra
 

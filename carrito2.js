@@ -16,7 +16,7 @@ let products = [
 ]
 
 //forEach es un metodo para recorrer arreglos.
-products.forEach(
+products?.forEach(
     product => {
         //crear el elemento
         const newProductCard = document.createElement('div')
@@ -40,7 +40,15 @@ products.forEach(
         padreContainer.appendChild(newProductCard);
     }
 )
-let carrito = []
+// let carrito = []
+const cartFromLS = JSON.parse(localStorage.getItem('carrito'))
+let carrito;
+if(cartFromLS){
+    carrito = JSON.parse(localStorage.getItem('carrito'))
+}else{
+    carrito= []
+}
+// let carrito = JSON.parse(localStorage.getItem('carrito'))
 
 
 
@@ -50,6 +58,8 @@ let carrito = []
         let product = products.find(product => product.productId == productId.id)
         console.log(product)
         carrito.push(product)
+
+        localStorage.setItem('carrito', JSON.stringify(carrito))
         //crear el elemento
         const newProductCads = document.createElement('div');
         newProductCads.id = product.productId;
